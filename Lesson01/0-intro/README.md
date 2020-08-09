@@ -1,8 +1,4 @@
-##Node.js01
-
-
-
-
+#Node.js01
 
 ##<img src="assets/logo.jpg" style="float:left;width:120px;margin-top:-48px;" />
 
@@ -34,7 +30,7 @@
 
 ### 安装Node.js
 
-​	[Node.js官网](https://nodejs.org)下载稳定版本,node偶数版本为稳定版本，奇数版本为非稳定版本。
+​[Node.js官网](https://nodejs.org)下载稳定版本,node偶数版本为稳定版本，奇数版本为非稳定版本。
 
 - mac 直接安装  或者 brew来安装
 
@@ -368,11 +364,3 @@ NPM(Node Package Manager)  官网的地址是 [npm官网](https://www.npmjs.com)
 ### 下期预告
 
 - koa框架 
-
-  
-
-  
-
-
-
-
