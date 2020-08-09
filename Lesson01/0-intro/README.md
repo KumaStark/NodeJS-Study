@@ -1,6 +1,4 @@
-#Node.js01
-
-##<img src="assets/logo.jpg" style="float:left;width:120px;margin-top:-48px;" />
+# Node.js01
 
 - 课堂目标
   
@@ -22,7 +20,7 @@
   - 内置模块fs的使用
   - buffer及stream
 
-###Node.js介绍
+### Node.js介绍
 
 ---
 
@@ -37,7 +35,7 @@
 - 安装完Node.js会自动安装NPM(Node Package Manager)：包管理工具；
 - 通过指令 node -v 来查看是否安装完成和查看node版本号；npm -v 来查看npm版本。
 
-###使用Node.js实现第一个服务器
+### 使用Node.js实现第一个服务器
 
 初步感受Node.js
 
@@ -337,7 +335,7 @@ NPM(Node Package Manager)  官网的地址是 [npm官网](https://www.npmjs.com)
   - 乱码的处理
   - buffer转换tostring
 
-###stream流
+### stream流
 
 - stream流：流与数据处理方面密不可分
   - 流的原理
