@@ -11,6 +11,8 @@ const server = http.createServer( (request, response) => {
     // 如果url与资源都映射，我们通过代码一个个的去写，是基本不可能的，所以，我们就定义一个url的规则，满足这个规则的url，我们就去执行的目录中匹配
     // 规则自己定，比如 /kkb 开头的url，我们都去 static 目录中进行查找
 
+    console.log('有人发送了一个请求过来:');
+
     // console.log('请求地址：', request.url);
     let url = request.url;
     let content = '';
