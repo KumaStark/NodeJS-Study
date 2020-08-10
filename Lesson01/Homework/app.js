@@ -16,6 +16,7 @@ const server = http.createServer((request,response)=>{
                 console.log("Response Page: index.html");
                 content = fs.readFileSync("./template/index.html");
                 response.write(content);
+                // response.write("Test infomation");
                 break;
         }
     }
