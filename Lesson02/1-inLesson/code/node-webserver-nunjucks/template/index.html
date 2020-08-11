@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>欢迎来到开课吧</h1>
+    <h2>特别留意的人员名单：</h2>
+    <ul>
+        <li>李红帅</li>
+        <li>张有文</li>
+    </ul>
+    <hr>
+    <h1>{{tempTitle}}</h1>
+    <ul>
+        {%for d in data%}
+        <li>{{d.title}}</li>
+        {%endfor%}
+    </ul>
+</body>
+</html>
