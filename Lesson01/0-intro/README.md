@@ -20,7 +20,7 @@
   - 内置模块fs的使用
   - buffer及stream
 
-### Node.js介绍
+## Node.js介绍
 
 ---
 
@@ -172,8 +172,6 @@ serve.listen(3000);
     }
     ```
 
-    
-
 - 自定义模块的按需导出
 
   通过module.exports 导出； \_\__dirname  , \_\_filename
@@ -208,7 +206,7 @@ serve.listen(3000);
   ```js
   let myfn = require("bModule").fn;
   myfn();
-  // 或者 通过解构赋值 
+  // 或者 通过解构赋值
   let { fn } = require("bModule");
   fn();
   ```
@@ -223,11 +221,9 @@ ypto，Debugger，DNS，Domain，Errors，Events，File System，
 
 Globals，HTTP，HTTPS，Modules，Net，OS，Path，Process，P unycode，Query Strings，Readline，REPL，Stream，String De coder，Timers，TLS/SSL，TTY，UDP/Datagram，URL， Utilities，V8，VM，ZLIB；内置模块不需要安装，外置模块需要安装；
 
-
-
 ### npm包管理器
 
-NPM(Node Package Manager)  官网的地址是 [npm官网](https://www.npmjs.com)	
+NPM(Node Package Manager)  官网的地址是 [npm官网](https://www.npmjs.com)
 
 - npm常用指令；
   - npm init：引导创建一个package.json文件
@@ -280,7 +276,7 @@ NPM(Node Package Manager)  官网的地址是 [npm官网](https://www.npmjs.com)
         if(err){
             return console.log(err);
         }
-        console.log("写入成功");   
+        console.log("写入成功");
     })
     ```
 
@@ -308,7 +304,7 @@ NPM(Node Package Manager)  官网的地址是 [npm官网](https://www.npmjs.com)
 
   - 修改文件名，目录也可以通过rename来操作
 
-    ```js
+  ```js
   fs.rename("1.txt","5.txt",function (err) {
         if(err){
             console.log(err);
@@ -316,15 +312,15 @@ NPM(Node Package Manager)  官网的地址是 [npm官网](https://www.npmjs.com)
             console.log("修改成功");
         }
     });
-    ```
+  ```
   
   - 判断文件是否存在
 
-    ```js
+  ```js
   fs.exists("4.txt",function (exists) {
         console.log(exists);
   })
-    ```
+  ```
 
 ### buffer缓冲区
 
@@ -361,4 +357,4 @@ NPM(Node Package Manager)  官网的地址是 [npm官网](https://www.npmjs.com)
 
 ### 下期预告
 
-- koa框架 
+- koa框架
