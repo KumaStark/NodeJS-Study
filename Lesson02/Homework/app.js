@@ -44,5 +44,4 @@ server.use((ctx, next) => {
     next();
 });
 // 启动服务器监听
-server.listen(serverPort);
-console.log(`服务器启动成功，您可以通过：http://localhost:${serverPort}`);
+server.listen(serverPort,()=>{console.log(`服务器启动成功，您可以通过：http://localhost:${serverPort}`);});
