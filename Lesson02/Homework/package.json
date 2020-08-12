@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "koa": "^2.13.0",
+    "koa-router": "^9.1.0",
+    "koa-static-cache": "^5.1.4",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.2"
+  }
+}
