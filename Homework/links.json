@@ -1,0 +1,6 @@
+[
+    { "title": "作业链接@20200810", "url": "./getData" }, 
+    { "title": "课程演示@20200812", "url": "./news" }, 
+    { "title": "作业链接@20200812", "url": "/addUser?username=xiaoming&age=19"},
+    { "title": "显示404页面", "url": "./notExist" }
+]
