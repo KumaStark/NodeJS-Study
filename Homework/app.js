@@ -1,7 +1,8 @@
 const Koa = require("koa");
 const KoaRouter = require('koa-router');
 const KoaStaticCache = require('koa-static-cache');
-const KoaStatic = require('koa-static');
+const StaticCache = require('koa-static-cache');
+// const KoaStatic = require('koa-static');
 const KoaBody = require('koa-body');
 // 读取配置文件
 const appSettings = require('./settings/app.json');
@@ -24,7 +25,8 @@ server.use(KoaBody({
 server.use(router.routes());
 server.use(router.allowedMethods());
 server.use(KoaStaticCache("./public", { prefix: "/res", gzip: true, dynamic: true }));
-server.use(KoaStatic("./static"));
+server.use(StaticCache("./static", { prefix: "/static", gzip: true, dynamic: true }));
+// server.use(KoaStatic("./static"));
 server.use(mainController.middleWare.prcdUnkownUrls);
 // 注册Url路由
 router.get('/', mainController.index);
