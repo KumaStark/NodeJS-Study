@@ -9,13 +9,16 @@
 <body>
     </script>
     <img src="./res/images/logo.png" alt="">
-    <h1>欢迎来到开课吧</h1>
-
+    <h1>Node.JS作业提交</h1>
     <hr>
     <ul>
-        {%for link in links%}
-        <li><a href="{{link.url}}">{{link.title}}</a></li>
-        {%endfor%}
+        {% for link in homepage %}
+            {% if link.url %}
+            <li><a href="{{link.url}}">{{link.title}}</a></li>
+            {% else %}
+            <h2>{{link.title}}</h2>
+            {% endif %}
+        {% endfor %}
     </ul>
     <!-- <script>import Dialog, { InputDialog } from "./res/js/Dialog.js"</script> -->
 </body>

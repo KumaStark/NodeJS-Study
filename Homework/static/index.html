@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/res/css/shop.css" />
+</head>
+
+<body>
+    <header id="header">
+        <a href="/" id="logo"></a>
+        <nav id="nav">
+            <a href="">笔记本</a>
+            <a href="">家居</a>
+        </nav>
+
+        <div id="user">
+            <a href="">登录</a>
+            <a href="">注册</a>
+        </div>
+    </header>
+    <div id="main">
+        <!-- 
+            application/x-www-form-urlencoded：把数据组织成urlencode的格式 => key=value&key=value...
+                适用于普通字符内容提交，提交的数据为纯字符
+            multipart/form-data：二进制数据格式
+                适用于提交的数据为非纯字符，如图片，视频等
+         -->
+        <div class="panel">
+            <h2>上传文件</h2>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <div class="form-item">
+                    <label>
+                        <span class="txt">文件1：</span>
+                        <input type="file" name="upload1" />
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        <span class="txt">文件2：</span>
+                        <input type="file" name="upload2" />
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        <span class="txt">文件3：</span>
+                        <input type="file" name="upload3" />
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        <button class="form-button primary">确认上传</button>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if fileCount>0 %}
+    <h1>共有{{fileCount}}个文件上传成功</h1>
+    <ul>
+        {% for file in uploadedFileInfo%}
+        <li>【原文件名：{{file.oldName}}】==>>【新文件名：{{file.newName}}】（文件大小{{file.fileSize}}字节）</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <h3>文件上传失败！（请检查上传的文件是否为空）</h3>
+    {% endif%}
+</body>
+</html>
