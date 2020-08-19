@@ -11,5 +11,10 @@
     "mysql2": "^2.1.0",
     "nodemon": "^2.0.4",
     "nunjucks": "^3.2.2"
-  }
+  },
+  "name": "nodejs_homework",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "KumaStark",
+  "license": "MIT"
 }

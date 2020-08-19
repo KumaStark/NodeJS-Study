@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "koa": "^2.13.0",
+    "koa-router": "^9.4.0",
+    "koa-static-cache": "^5.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "name": "app1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon app.js"
+  }
+}
