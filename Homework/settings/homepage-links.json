@@ -7,7 +7,9 @@
     { "title": "通过/addUser向数据库添加数据", "url": "/addUser?username=xiaoming&age=19"},
     { "title": "通过/clearUsers清空users表数据", "url": "/ClearUsers"},
     { "title": "Lesson 4（2020/08/14）"}, 
-    { "title": "在static中的index.html页面通过表单post提交将文件上传到static/upload文件夹", "url": "/static/index.html"},
+    { "title": "在static中的index.html页面通过表单post提交将文件上传到static/upload文件夹", "url": "/getUpload"},
+    { "title": "Lesson 5（2020/08/17）"}, 
+    { "title": "简易聊天室", "url": "/chat"},
     { "title": "其他"},
     { "title": "初始化news表", "url": "/initNewsData"},
     { "title": "初始化shop表", "url": "/initshopData"}

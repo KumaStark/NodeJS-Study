@@ -16,7 +16,7 @@ module.exports = {
         ctx.body = "数据已清空";
     },
     getUpload: ctx => {
-        ctx.response.redirect('/');
+        ctx.body = tpl.render("upload.html");
     },
     uploadFile: ctx => {
         let files = ctx.request.files;

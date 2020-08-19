@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易聊天室</title>
+</head>
+
+<body>
+    <textarea name="" id="textarea" cols="60" rows="10"></textarea>
+    <input type="text" id="content">
+    <button id="btn">发送</button>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        let textarea = document.querySelector('#textarea');
+        let content = document.querySelector('#content');
+        let sendBtn = document.querySelector('#btn');
+        const socket = io('/');
+        socket.on('Greatings', data => {
+            console.log(data);
+            writeData(data);
+        })
+        socket.on('Message', data => {
+            writeData(data);
+        })
+        // socket.on('userUpdate', data => {
+        //     console.log("当前用户列表：",data)
+        // })
+        function writeData(data) {
+            textarea.innerHTML += data + '\r\n';
+        }
+        sendBtn.onclick = function () {
+            // writeData('我说：' + content.value);
+            socket.emit('Message', content.value);
+            content.value = '';
+            content.focus();
+        }
+    </script>
+</body>
+
+</html>

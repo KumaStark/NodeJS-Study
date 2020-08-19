@@ -3,14 +3,17 @@
     "start": "nodemon app.js"
   },
   "dependencies": {
+    "http": "^0.0.1-security",
     "koa": "^2.13.0",
     "koa-body": "^4.2.0",
     "koa-router": "^9.1.0",
     "koa-static": "^5.0.0",
     "koa-static-cache": "^5.1.4",
+    "moment": "^2.27.0",
     "mysql2": "^2.1.0",
     "nodemon": "^2.0.4",
-    "nunjucks": "^3.2.2"
+    "nunjucks": "^3.2.2",
+    "socket.io": "^2.3.0"
   },
   "name": "nodejs_homework",
   "version": "1.0.0",
